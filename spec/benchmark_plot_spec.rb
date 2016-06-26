@@ -1,8 +1,7 @@
+require 'spec_helper'
+
 describe Benchmark do
-
-end
-
-describe Benchmark::Plot do
-  context ".new" do
+  context ".plot" do
+    # TODO: write tests
   end
 end

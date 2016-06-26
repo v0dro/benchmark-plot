@@ -1,6 +1,10 @@
 require 'benchmark'
 require 'gruff'
 
+require 'benchmark/plot/plotter'
+require 'benchmark/plot/report_maker'
+require 'benchmark/plot/version'
+
 module Benchmark
   def self.plot test_data, opts={}, &block
     include Benchmark::Plot

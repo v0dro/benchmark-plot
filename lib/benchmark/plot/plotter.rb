@@ -7,6 +7,7 @@ module Benchmark
         @title     = opts[:title] || :Benchmarks
         @time      = opts[:time] || :real
         @x_labels  = opts[:x_labels] || true
+        @x_axis_label = opts[:x_axis_label]
         @test_data = test_data
       end
 
@@ -22,8 +23,9 @@ module Benchmark
           plot.data label, time_data
         end
         positions = Array.new(@test_data.size) { |i| i }
-        puts positions.zip(@test_data.map(&:to_s)).to_h
         plot.labels = positions.zip(@test_data.map(&:to_s)).to_h if @x_labels
+        plot.x_axis_label = @x_axis_label if @x_axis_label
+        plot.y_axis_label = 'Seconds'
         plot.write("#{@file_name}.png")
       end
 

@@ -6,9 +6,8 @@ require 'benchmark/plot/version.rb'
 Benchmark::Plot::DESCRIPTION = <<MSG
 benchmark-plot is an extension to the Ruby standard benchmarking library.
 
-It let's you easily create plots in the form of PNG images of any code that you
-want to benchmark over a varied number of inputs. It also supports comparative
-benchmarking.
+It let's you easily create plots of any code that you want to benchmark over 
+a varied number of inputs. It also supports comparative benchmarking.
 MSG
 
 Gem::Specification.new do |spec|

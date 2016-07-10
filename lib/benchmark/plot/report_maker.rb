@@ -1,5 +1,6 @@
 module Benchmark
   module Plot
+    # Internal class, of no special use to the user.
     class ReportMaker
       def initialize data
         @data = data
@@ -14,7 +15,7 @@ module Benchmark
         @reports[label] = results_array
       end
 
-      # An array of Benchmark::Tms objects representing each item.
+      # A Hash of labels => Benchmark::Tms objects representing each item.
       attr_reader :reports
     end
   end

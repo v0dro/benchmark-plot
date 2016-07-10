@@ -2,6 +2,10 @@
 
 A Ruby benchmark extension to allow comparative plotting of benchmarks.
 
+# Screencast
+
+Watch a screencast of gem usage [here](https://www.youtube.com/watch?v=WW6M4Df-soQ).
+
 # Usage
 
 This gem is mainly useful for benchmarking code over a number of inputs. This input should be supplied in the form of an object capable of calling `#each`.

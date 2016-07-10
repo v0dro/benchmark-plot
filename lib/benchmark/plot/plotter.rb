@@ -1,5 +1,6 @@
 module Benchmark
   module Plot
+    # Internal class, of no special use to the user.
     class Plotter
       def initialize reporter, test_data, opts
         @reporter  = reporter
